@@ -21,8 +21,8 @@ describe('Users Routes', () => {
     await request(app.server)
       .post('/users')
       .send({
-        name: 'Ale',
-        email: 'ale@gmail.com'
+        name: 'any_name',
+        email: 'any_email@mail.com'
       })
       .expect(201)
   })
